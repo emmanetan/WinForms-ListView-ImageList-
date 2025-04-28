@@ -113,20 +113,24 @@ namespace _6._7.ListView_et_ImageList
             ImageList imageListLarge = new ImageList();
 
             // Initialize the ImageList objects with bitmaps.
-            imageListSmall.Images.Add(Image.FromFile(@"C:\Users\Devman\Desktop\new.jpg"));
-            imageListSmall.Images.Add(Image.FromFile(@"C:\Users\Devman\Desktop\Capture.png"));
-            imageListLarge.Images.Add(Image.FromFile(@"C:\Users\Devman\Desktop\new.jpg"));
-            imageListLarge.Images.Add(Image.FromFile(@"C:\Users\Devman\Desktop\Capture.png"));
+            imageListSmall.Images.Add(Image.FromFile(@"C:\Users"));
+            imageListSmall.Images.Add(Image.FromFile(@"C:\Users"));
+            imageListLarge.Images.Add(Image.FromFile(@"C:\Users"));
+            imageListLarge.Images.Add(Image.FromFile(@"C:\Users"));
             //Assign the ImageList objects to the ListView.
 
             // set the siz to the Image
-            imageListSmall.ImageSize = new Size(50, 50);
-            imageListLarge.ImageSize = new Size(60, 80);
+            imageListSmall.ImageSize = new Size(100, 100);
+            imageListLarge.ImageSize = new Size(150, 150);
 
             listView1.LargeImageList = imageListLarge;
             listView1.SmallImageList = imageListSmall;
         
         }
-        
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
